@@ -1,0 +1,32 @@
+.paletteColor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    border-bottom: 1px solid grey;
+    cursor: pointer;
+    color: darkgrey;
+}
+
+.paletteColor::before {
+    content: '';
+    position: absolute;
+    right: 5px;
+    top: -5px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 10px 10px 10px;
+    transform: translate(-50%, -50%);
+    border-color: transparent transparent #ffffff transparent;
+}
+
+.paletteColor:hover {
+    background-color: dodgerblue;
+    color: white;
+}
+
+.paletteColorHex {
+    width: 20px;
+    height: 20px;
+}
